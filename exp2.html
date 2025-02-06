@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Footballers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .navbar {
+            background: #333;
+            padding: 10px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-size: 18px;
+        }
+        .player {
+            background: white;
+            padding: 15px;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 30%;
+            vertical-align: top;
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background: #444;
+            color: white;
+        }
+        form {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="https://en.wikipedia.org/wiki/Lionel_Messi" target="_blank">Lionel Messi</a>
+        <a href="https://en.wikipedia.org/wiki/Cristiano_Ronaldo" target="_blank">Cristiano Ronaldo</a>
+        <a href="https://en.wikipedia.org/wiki/Neymar" target="_blank">Neymar Jr</a>
+        <a href="https://www.fifa.com/" target="_blank">FIFA Website</a>
+    </div>
+
+    <div class="container">
+        <h1>Famous Footballers</h1>
+
+        <!-- Search Form -->
+        <form>
+            <label for="search">Search for a Footballer:</label>
+            <input type="text" id="search" name="search" placeholder="Type a name...">
+            <button type="submit">Search</button>
+        </form>
+
+        <!-- Messi Section -->
+        <div class="player">
+            <h2><a href="https://www.transfermarkt.co.in/lionel-messi/profil/spieler/28003" target="_blank">Lionel Messi</a></h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZOUaOJu7tRMH1qDFpxDLDp8GK0VaCs8HiAg&s" alt="Lionel Messi">
+            <p>Lionel Messi is an Argentinian footballer who has won multiple Ballon d'Or awards. He played for Barcelona, PSG, and now Inter Miami.</p>
+        </div>
+
+        <!-- Ronaldo Section -->
+        <div class="player">
+            <h2><a href="https://www.transfermarkt.co.in/cristiano-ronaldo/profil/spieler/8198#google_vignette" target="_blank">Cristiano Ronaldo</a></h2>
+            <img src="https://www.thesun.co.uk/wp-content/uploads/2024/10/reu_487950jpg-JS3751592.jpg?strip=all&w=480" alt="Cristiano Ronaldo">
+            <p>Cristiano Ronaldo is a Portuguese footballer known for his incredible goal-scoring ability. He has played for Sporting, Manchester United, Real Madrid, Juventus, and Al-Nassr.</p>
+        </div>
+
+        <!-- Neymar Section -->
+        <div class="player">
+            <h2><a href="https://www.transfermarkt.co.in/neymar/profil/spieler/68290" target="_blank">Neymar Jr</a></h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDz3tSvnarJTanMV8goiDebGgSTkNYd_pUdg&s" alt="Neymar Jr">
+            <p>Neymar Jr is a Brazilian footballer known for his dribbling skills. He has played for Santos, Barcelona, PSG, and Al-Hilal.</p>
+        </div>
+
+        <!-- Player Stats Table -->
+        <h2>Player Stats</h2>
+        <table>
+            <tr>
+                <th>Player</th>
+                <th>Club</th>
+                <th>Goals</th>
+                <th>Ballon d'Or Wins</th>
+            </tr>
+            <tr>
+                <td><a href="https://en.wikipedia.org/wiki/Lionel_Messi" target="_blank">Lionel Messi</a></td>
+                <td>Inter Miami</td>
+                <td>800+</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td><a href="https://en.wikipedia.org/wiki/Cristiano_Ronaldo" target="_blank">Cristiano Ronaldo</a></td>
+                <td>Al-Nassr</td>
+                <td>850+</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td><a href="https://en.wikipedia.org/wiki/Neymar" target="_blank">Neymar Jr</a></td>
+                <td>Al-Hilal</td>
+                <td>400+</td>
+                <td>0</td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+</html>

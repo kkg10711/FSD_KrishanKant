@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Time in India</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #clock {
+            font-size: 2em;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Current Time in India (IST)</h2>
+    <div id="clock">Loading...</div>
+
+    <script>
+        function updateClock() {
+            let options = { timeZone: "Asia/Kolkata", hour12: true, hour: "2-digit", minute: "2-digit", second: "2-digit" };
+            let timeString = new Intl.DateTimeFormat("en-US", options).format(new Date());
+            document.getElementById("clock").innerText = timeString;
+        }
+        
+        setInterval(updateClock, 1000);
+        updateClock(); // Initial call to set time immediately
+    </script>
+
+</body>
+</html>
